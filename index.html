@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Length Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/683eb3ecdc.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="app-container">
+        <h1>Length Converter</h1>
+
+        <div class="input-container">
+            <p>Enter value:</p>
+            <input type="text" id="inputValue" />
+        </div>
+
+        <div class="unit-container">
+            <p>Select units:</p>
+            <div class="unit-selectors">
+                <select id="unitFrom">
+                    <option value="meter" selected>meter (m)</option>
+                    <option value="kilometer">kilometer (km)</option>
+                    <option value="centimeter">centimeter (cm)</option>
+                    <option value="millimeter">millimeter (mm)</option>
+                    <option value="micrometer">micrometer (μm)</option>
+                    <option value="nanometer">nanometer (nm)</option>
+                    <option value="mile">mile (mi)</option>
+                    <option value="yard">yard (yd)</option>
+                    <option value="foot">foot (ft)</option>
+                    <option value="inch">inch (in)</option>
+                    <option value="lightyear">light year (ly)</option>
+                </select>
+
+                <button id="swap-units"><i class="fa-solid fa-arrow-left"></i> Swap <i
+                        class="fa-solid fa-arrow-right"></i></button>
+
+                <select id="unitTo">
+                    <option value="meter">meter (m)</option>
+                    <option value="kilometer" selected>kilometer (km)</option>
+                    <option value="centimeter">centimeter (cm)</option>
+                    <option value="millimeter">millimeter (mm)</option>
+                    <option value="micrometer">micrometer (μm)</option>
+                    <option value="nanometer">nanometer (nm)</option>
+                    <option value="mile">mile (mi)</option>
+                    <option value="yard">yard (yd)</option>
+                    <option value="foot">foot (ft)</option>
+                    <option value="inch">inch (in)</option>
+                    <option value="lightyear">light year (ly)</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="result-section">
+            <p class="result-label">Result:</p>
+            <div class="result-value-container">
+                <div id="outputValue" class="result-value"></div>
+            </div>
+        </div>
+
+        <div class="formulas-container">
+            <div class="formulas-container-content">
+                <h4>Conversion Formulas</h4>
+                <ul>
+                    <li>1 kilometer (km) = 1000 meters (m)</li>
+                    <li>1 centimeter (cm) = 0.01 meters (m)</li>
+                    <li>1 millimeter (mm) = 0.001 meters (m)</li>
+                    <li>1 micrometer (μm) = 1e-6 meters (m)</li>
+                    <li>1 nanometer (nm) = 1e-9 meters (m)</li>
+                    <li>1 mile (mi) = 1609.34 meters (m)</li>
+                    <li>1 yard (yd) = 0.9144 meters (m)</li>
+                    <li>1 foot (ft) = 0.3048 meters (m)</li>
+                    <li>1 inch (in) = 0.0254 meters (m)</li>
+                    <li>1 light year (ly) = 9.461e+15 meters (m)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
