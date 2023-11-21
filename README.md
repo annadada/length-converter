@@ -4,9 +4,7 @@
 
 The Length Converter app is a tool that allows you to convert values between different units of length. You can quickly and easily convert measurements such as meters, kilometers, inches, feet, and more.
 
-<p align="center">
-    <img src="./img/length-converter.png" alt="Length Converter Interface" width="500"/>
-</p>
+![Length Converter App](./img/length-converter.png)
 
 ## *Features*
 
